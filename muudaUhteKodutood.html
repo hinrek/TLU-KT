@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta title="TLÜKT prototype Prototype">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/3.0.1/css/primer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css" />
+    <style>
+        .gear {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 1420px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">TLU-KT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="pealeht.html">Pealeht
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kalender</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tunniplaan</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="kodutood.html">Kodutööd
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profiil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Välju</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+    <div class="container-fluid">
+        <h1>Muuda kodutööd</h1>
+
+        <h2>Lisa tund</h2>
+        <div class='form-group'>
+            <label for='daySelection'>Päev</label>
+            <select class='form-control' name="daySelection">
+                <option>Esmaspäev</option>
+                <option>Teisipäev</option>
+                <option>Kolmapäev</option>
+                <option>Neljapäev</option>
+                <option>Reede</option>
+                <option>Laupäev</option>
+                <option>Pühapäev</option>
+            </select>
+            <br>
+            <label for='startTime'>Alguse kellaaeg</label>
+            <input type='text' class='form-control' name='startTime' value="08:15">
+            <br>
+            <label for='endTime'>Lõpu kellaaeg</label>
+            <input type='text' class='form-control' name='endTime' value="09:45">
+            <br>
+            <label for='subject'>Aine</label>
+            <input type='text' class='form-control' name='subject' value="Teoreetiline Informaatika">
+            <br>
+            <label for='teacher'>Õppejõud</label>
+            <input type='text' class='form-control' name='teacher' value="Peeter Normak">
+            
+            <br><br>
+            <form action="muudaKodutood.html" method="get">
+                <button action="submit" class="btn btn-primary" >Save</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
