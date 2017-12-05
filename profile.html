@@ -33,13 +33,7 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-textarea{
-	font-family: arial, sans-serif;
-	width: 50%;
-	position: absolute;
-	border: none;
 	
-}
 
 </style>
 
@@ -54,13 +48,22 @@ textarea{
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="pealeht.html">Pealeht
-            <span class="sr-only">(current)</span>
+        <li class="nav-item">
+          <a class="nav-link" href="pealeht.html">Pealeht            
           </a>
         </li>
-        <li class="nav-item">
+		 <li class="nav-item">
+            <a class="nav-link" href="#">Kalender</a>
+        </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">Tunniplaan</a>
+         </li>
+		 <li class="nav-item">
+            <a class="nav-link" href="kodutood.html">Kodutööd</a>
+         </li>
+        <li class="nav-item active">
           <a class="nav-link" href="profile.html">Profiil</a>
+		  <span class="sr-only">(current)</span>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html">Välju</a>
@@ -68,19 +71,15 @@ textarea{
       </ul>
     </div>
    </nav>
-   
+   <div style="display:inline-block;vertical-align:top;">
    <img src="profiilipilt.png" style="width:150px;height:150px;">
-   <textarea rows="8" readonly >
-  
-    Nimi:Nimi Nimi	
-    Sünnikuupäev: 01.01.1990
-	Isikukood: 39001010000
-	E-post: nimi@gmail.com	
-	Eriala: Informaatika
-  </textarea>
-  <br><br><br>
- 
-</table>
+	</div>
+   <div style="display:inline-block; font-family:arial, sans-serif; padding: 50px;">
+    <div>Nimi: Aisto Gem</div>
+    <div>Sünniaeg: 01.01.1990</div>
+    <div>Isikukood: 39001010000</div>
+	<div>Eriala: Informaatika</div>
+</div>
 	
 	<div class ="container">
 		<h1>Õpingute ja tulemuste statistika</h1>
