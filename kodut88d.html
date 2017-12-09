@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta title="TLÜKT prototype Prototype">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/3.0.1/css/primer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .gear {
+      height: 50px;
+      width: 50px;
+      margin-bottom: 60%;
+      margin-left: 20px;
+    }
+    .title {
+        margin: 20px 0 0 60px;
+    }
+    .kodut88de_tabel {
+        width: 70%;
+        margin: 30px 0 0 60px;
+    }
+    .bgc_gray{
+        background-color: #f8f9fa ;
+    }
+    .checkbox_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .checkbox_container input {
+        position: absolute;
+        opacity: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: red;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .checkbox_container:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .checkbox_container input:checked ~ .checkmark {
+        background-color: #2196F3;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .checkbox_container input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .checkbox_container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">TLU-KT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="pealeht.html">Pealeht
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kalender</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " href="tunniplaan.html">Tunniplaan</a>
+          <span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kodut88d.html">Kodutööd
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profiil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Välju</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+  <div class="container-fluid">
+    <h1 class="title">Kodutööd</h1>
+        <div class="kodut88de_tabel">
+            <table class="table table-hover table-condensed">
+                <thead>
+                <tr style="background-color: #dddddd;">
+                    <th>Kuupäev</th>
+                    <th>Kursus</th>
+                    <th>Kodutöö sisu</th>
+                    <th>Üleslaadimine</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>01.12</td>
+                    <td>3D Modelleerimine</td>
+                    <td>
+                        <label class="checkbox_container">3D lennukimudel Solid Edge programmiga
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;">
+                            Lae üles
+                            <i class="fa fa-cloud-upload upload_icon" style="font-size:14px; color:#fff; font-size: 18px;"> </i>
+                        </label>    
+                    </td>
+                </tr>
+                <tr class="bgc_gray">
+                    <td>02.12</td>
+                    <td>Veebiprogrammeerimine</td>
+                    <td>
+                        <label class="checkbox_container">Mitme tabeliga registreerimise vormi ülesanne
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;">
+                            Lae üles
+                            <i class="fa fa-cloud-upload upload_icon" style="font-size:14px; color:#fff; font-size: 18px;"> </i>
+                        </label>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>02.12</td>
+                    <td>Algoritmid ja andmestruktuurid</td>
+                    <td>
+                        <label class="checkbox_container">Viitmuutujad ja nende kasutamine ahelate ehitamiseks
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;">
+                            Lae üles
+                            <i class="fa fa-cloud-upload upload_icon" style="font-size:14px; color:#fff; font-size: 18px;"> </i>
+                        </label>    
+                    </td>
+                </tr>
+                <tr class="bgc_gray">
+                    <td>05.12</td>
+                    <td>Arvutimängud</td>
+                    <td>
+                        <label class="checkbox_container">Mängu kontseptsiooni esitlemine
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;">
+                            Lae üles
+                            <i class="fa fa-cloud-upload upload_icon" style="font-size:14px; color:#fff; font-size: 18px;"> </i>
+                        </label>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>06.12</td>
+                    <td>Veebilehtede loomine</td>
+                    <td>
+                        <label class="checkbox_container">Oma kodulehe tegemine
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label> 
+                    </td>
+                    <td>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;">
+                            Lae üles
+                            <i class="fa fa-cloud-upload upload_icon" style="font-size:14px; color:#fff; font-size: 18px;"> </i>
+                        </label>    
+                    </td>
+                </tr>
+
+                <tr class="bgc_gray">
+                    <td>06.12</td>
+                    <td>Arvutimängud</td>
+                    <td>
+                        <label class="checkbox_container">Mängu tegelaste esitlemine
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;">
+                            Lae üles
+                            <i class="fa fa-cloud-upload upload_icon" style="font-size:14px; color:#fff; font-size: 18px;"> </i>
+                        </label>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>07.12</td>
+                    <td>Diskreetne matemaatika</td>
+                    <td>
+                        <label class="checkbox_container">Arvutusülesannete lahendamine
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>    
+                    </td>
+                    <td>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;">
+                            Lae üles
+                            <i class="fa fa-cloud-upload upload_icon" style="font-size:14px; color:#fff; font-size: 18px;"> </i>
+                        </label>    
+                    </td>
+                </tr>
+                <tr class="bgc_gray">
+                    <td>11.12</td>
+                    <td>Graafika ja muusika programmeerimine</td>
+                    <td>
+                        <label class="checkbox_container">Juhitav animatsioon
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="btn btn-primary" for="my-file-selector">
+                            <input id="my-file-selector" type="file" style="display:none;">
+                            Lae üles
+                            <i class="fa fa-cloud-upload upload_icon" style="font-size:14px; color:#fff; font-size: 18px;"> </i>
+                        </label>    
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+  </div>
+</body>
+
+</html>
