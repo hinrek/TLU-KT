@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta title="TLÜKT prototype Prototype">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
@@ -14,17 +14,15 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/3.0.1/css/primer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/3.0.1/css/primer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css" />
   <style>
-    .gear{
-      height:50px;
-      width:50px;
-      margin-bottom: 1420px;
+    .gear {
+      height: 50px;
+      width: 50px;
+      margin-bottom: 60%;
       margin-left: 20px;
-      
     }
-  
   </style>
 </head>
 
@@ -46,16 +44,16 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Kalender</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tunniplaan</a>
-        </li>
         <li class="nav-item active">
-          <a class="nav-link" href="kodutood.html">Kodutööd
+          <a class="nav-link " href="tunniplaan.html">Tunniplaan</a>
           <span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kodutööd
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Profiil</a>
+          <a class="nav-link" href="profile.html">Profiil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html">Välju</a>
@@ -65,13 +63,13 @@
   </nav>
   <!-- Navbar end -->
   <div class="container-fluid">
-        <h1>Kodused tööd</h1>
+    <h1>Tunniplaan</h1>
 
-        <iframe src="https://calendar.google.com/calendar/embed?src=tlu.ee_70jtvhtcjo1jginekcce27lk0c%40group.calendar.google.com&ctz=Europe/Tallinn" 
-        style="border: 0" width="950" height="750" frameborder="0" scrolling="no"></iframe>
-        <a href="muudaKodutood.html" >
-          <img class="gear" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gear.svg">
-        </a>
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tlu.ee_70jtvhtcjo1jginekcce27lk0c%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=Europe%2FTallinn"
+      style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <a href="muudaTunniplaani.html">
+      <img class="gear" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gear.svg">
+    </a>
   </div>
 </body>
 
