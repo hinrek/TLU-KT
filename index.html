@@ -16,6 +16,24 @@
     .ta_c {
         text-align: center;
     }
+    .submit_button{
+        margin-bottom: 15px;
+    }
+    .register_button {
+        padding: 10px 5px;
+        margin-top: 10px;
+        background-color: #007bff;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .register_button:hover{
+        background-color: #0069d9;
+        color: #fff;
+    }
     </style>
 </head>
 
@@ -29,15 +47,16 @@
                 <img src="img/tlukt_logo.png" alt="TLU KT">
                 <form action="pealeht.html">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label class="" for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sisesta e-mail">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Parool</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Parool">
                     </div>
-                    <button type="submit" class="btn btn-primary">Sisene</button>
+                    <button type="submit" class="btn btn-primary submit_button">Sisene</button>
                 </form> 
+                <a href="register.html" class="btn register_button">Registreeri</a>
         </div>
     </div>
 </body>
