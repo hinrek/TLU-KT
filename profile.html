@@ -1,163 +1,165 @@
 <doctype html>
-<html>
+	<html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta title="TLÜKT prototype Prototype">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-    crossorigin="anonymous">
+	<head>
+		<meta charset="UTF-8">
+		<meta title="TLÜKT prototype Prototype">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		  crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+		  crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+		  crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+		  crossorigin="anonymous">
+		<style>
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 80%;
+			}
 
+			td,
+			th {
+				border: 1px solid #dddddd;
+				text-align: left;
+				padding: 8px;
+			}
 
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
+		</style>
 
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
-	
-}
+		<body>
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-md navbar-dark bg-primary static-top">
+				<a class="navbar-brand" href="#">TLU-KT</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				  aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="pealeht.html">Pealeht
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kalender</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="tunniplaan.html">Tunniplaan</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="kodut88d.html">Kodutööd
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="profile.html">Profiil</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Välju</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Navbar end -->
+			<div class="container">
+				<h1>Isikuandmed</h1>
+				<div style="display:inline-block;vertical-align:top;">
+					<img src="img/profile_img.jpg" style="width:150px;height:150px;">
+				</div>
+				<div style="display:inline-block; font-family:arial, sans-serif; padding: 50px;">
+					<div>Nimi: Aisto Gem</div>
+					<div>Sünniaeg: 01.01.1990</div>
+					<div>Isikukood: 39001010000</div>
+					<div>Eriala: Informaatika</div>
+				</div>
+			</div>
+			<div class="container">
+				<h1>Õpingute ja tulemuste statistika</h1>
+				<br>
+				<h2>Keskmine hinne</h2>
+				<table>
+					<tr>
+						<th>Õppeaasta</th>
+						<th>Sügissemester</th>
+						<th>Kevadsemester</th>
+					</tr>
+					<tr>
+						<td>2016/2017</td>
+						<td>3.7</td>
+						<td>4.0</td>
+					</tr>
+					<tr>
+						<td>2017/2018</td>
+						<td>3.3</td>
+						<td>3.9</td>
+					</tr>
+					<tr>
+						<td>2018/2019</td>
+						<td>4.2</td>
+						<td>4.0</td>
+					</tr>
+				</table>
+				<br>
+				</br>
+				<h2>Eksamid</h2>
+				<table>
+					<tr>
+						<th>Õppeaasta</th>
+						<th>Sügissemester</th>
+						<th>Kevadsemester</th>
+					</tr>
+					<tr>
+						<td>2016/2017</td>
+						<td>...</td>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>2017/2018</td>
+						<td>...</td>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>2018/2019</td>
+						<td>...</td>
+						<td>...</td>
+					</tr>
+				</table>
+				<br>
+				</br>
+				<h2>Kodused tööd</h2>
+				<table>
+					<tr>
+						<th>Õppeaasta</th>
+						<th>Sügissemester</th>
+						<th>Kevadsemester</th>
+					</tr>
+					<tr>
+						<td>2016/2017</td>
+						<td>...</td>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>2017/2018</td>
+						<td>...</td>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>2018/2019</td>
+						<td>...</td>
+						<td>...</td>
+					</tr>
+				</table>
+				<hr>
+			</div>
+			<footer class="container">
+				<p>&copy; TLU-KT</p>
+			</footer>
+		</body>
+	</head>
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-	
-
-</style>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">TLU-KT</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="pealeht.html">Pealeht            
-          </a>
-        </li>
-		 <li class="nav-item">
-            <a class="nav-link" href="#">Kalender</a>
-        </li>
-         <li class="nav-item">
-            <a class="nav-link" href="tunniplaan.html">Tunniplaan</a>
-         </li>
-		 <li class="nav-item">
-            <a class="nav-link" href="kodut88d.html">Kodutööd</a>
-         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="profile.html">Profiil</a>
-		  <span class="sr-only">(current)</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Välju</a>
-        </li>
-      </ul>
-    </div>
-   </nav>
-   <div style="display:inline-block;vertical-align:top;">
-   <img src="img/profile_img.jpg" style="width:150px;height:150px;">
-	</div>
-   <div style="display:inline-block; font-family:arial, sans-serif; padding: 50px;">
-    <div>Nimi: Aisto Gem</div>
-    <div>Sünniaeg: 01.01.1990</div>
-    <div>Isikukood: 39001010000</div>
-	<div>Eriala: Informaatika</div>
-</div>
-	
-	<div class ="container">
-		<h1>Õpingute ja tulemuste statistika</h1>
-		<br>
-		<h2>Keskmine hinne</h2>
-	<table>
-	  <tr>
-		<th>Õppeaasta</th>
-		<th>Sügissemester</th>
-		<th>Kevadsemester</th>
-	  </tr>
-	  <tr>
-		<td>2016/2017</td>
-		<td>3.7</td>
-		<td>4.0</td>
-	  </tr>
-	  <tr>
-		<td>2017/2018</td>
-		<td>3.3</td>
-		<td>3.9</td>
-	  </tr>
-	  <tr>
-		<td>2018/2019</td>
-		<td>4.2</td>
-		<td>4.0</td>
-	  </tr>
-	</table>
-	<br>
-   </br>
-   <h2>Eksamid</h2>
-   <table>
-	<tr>
-		<th>Õppeaasta</th>
-		<th>Sügissemester</th>
-		<th>Kevadsemester</th>
-	  </tr>
-	  <tr>
-		<td>2016/2017</td>
-		<td>...</td>
-		<td>...</td>
-	  </tr>
-	  <tr>
-		<td>2017/2018</td>
-		<td>...</td>
-		<td>...</td>
-	  </tr>
-	  <tr>
-		<td>2018/2019</td>
-		<td>...</td>
-		<td>...</td>
-	  </tr>
-	</table>
-	<br>
-	</br>
-	<h2>Kodused tööd</h2>
-	<table>
-		<tr>
-		<th>Õppeaasta</th>
-		<th>Sügissemester</th>
-		<th>Kevadsemester</th>
-	  </tr>
-	  <tr>
-		<td>2016/2017</td>
-		<td>...</td>
-		<td>...</td>
-	  </tr>
-	  <tr>
-		<td>2017/2018</td>
-		<td>...</td>
-		<td>...</td>
-	  </tr>
-	  <tr>
-		<td>2018/2019</td>
-		<td>...</td>
-		<td>...</td>
-	  </tr>
-	</table>
-</div>	
-  </body>
-  </head>
-  </html>
+	</html>

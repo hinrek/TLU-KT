@@ -39,16 +39,14 @@
         $("#btn-tunniplaan").addClass("active")
         $("#btn-arvestused-eksamid").removeClass("active")
         $("#btn-kodused-tood").removeClass("active")
-      }
-      else if (i === 2) {
+      } else if (i === 2) {
         $("#kalender").append(
           '<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tlu.ee_6fql2gmjrlacp79fnkjusqer7g%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=Europe%2FTallinn" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>'
         )
         $("#btn-tunniplaan").removeClass("active")
         $("#btn-arvestused-eksamid").addClass("active")
         $("#btn-kodused-tood").removeClass("active")
-      }
-      else if (i === 3) {
+      } else if (i === 3) {
         $("#kalender").append(
           '<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tlu.ee_70jtvhtcjo1jginekcce27lk0c%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=Europe%2FTallinn" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>'
         )
@@ -59,7 +57,7 @@
     }
   </script>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary static-top">
     <a class="navbar-brand" href="#">TLU-KT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -68,19 +66,19 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Pealeht
-            <span class="sr-only">(current)</span>
+        <li class="nav-item">
+          <a class="nav-link active" href="pealeht.html">Pealeht
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Kalender</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tunniplaan.html">Tunniplaan</a>
+          <a class="nav-link " href="tunniplaan.html">Tunniplaan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="kodut88d.html">Kodutööd</a>
+          <a class="nav-link" href="kodut88d.html">Kodutööd
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="profile.html">Profiil</a>
@@ -93,14 +91,13 @@
   </nav>
   <!-- Navbar end -->
   <div class="container">
-    <br>
     <h1>Kalender</h1>
     <div id="pealeht-buttons">
       <button type="button" class="btn btn-primary active" id="btn-tunniplaan">Tunniplaan</button>
       <button type="button" class="btn btn-secondary" id="btn-arvestused-eksamid">Arvestused & Eksamid</button>
       <button type="button" class="btn btn-success" id="btn-kodused-tood">Kodused tööd</button>
     </div>
-<br>
+    <br>
     <div id="kalender" class="embed-responsive embed-responsive-16by9">
       <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tlu.ee_26fr88mp5ruglfujnde2kv9e88%40group.calendar.google.com&amp;color=%23853104&amp;ctz=Europe%2FTallinn"
         style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
@@ -130,8 +127,11 @@
     <p>Enda serverisse WordPressi sisuhaldustarkvara paigaldamist ei tasuks karta ning kui tõsine soov blogi kirjutada siis
       tuleks seda kaaluda. Kõige lihtsam moodus selleks on rentida virtuaalserverit, kuhu siis saab paigaldada WordPressi.
       Paljud virtuaalserverite teenusepakkujad võimaldavad WordPressi paigaldada nn. ühe nupuvajutusega...</p>
+    <hr>
   </div>
-
+  <footer class="container">
+    <p>&copy; TLU-KT</p>
+  </footer>
 </body>
 
 </html>

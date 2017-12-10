@@ -14,21 +14,11 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/3.0.1/css/primer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css" />
-    <style>
-        .gear {
-            height: 50px;
-            width: 50px;
-            margin-bottom: 1420px;
-            margin-left: 20px;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary static-top">
         <a class="navbar-brand" href="#">TLU-KT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -44,15 +34,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Kalender</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="tunniplaan.html">Tunniplaan</a>
-                    <span class="sr-only">(current)</span>
+                <li class="nav-item">
+                    <a class="nav-link active" href="tunniplaan.html">Tunniplaan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="kodut88d.html">Kodutööd</a>
+                    <a class="nav-link" href="kodut88d.html">Kodutööd
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Profiil</a>
+                    <a class="nav-link" href="profile.html">Profiil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Välju</a>
@@ -61,10 +51,9 @@
         </div>
     </nav>
     <!-- Navbar end -->
-    <div class="container-fluid">
+    <div class="container">
         <h1>Isiklikud tunnid</h1>
-
-        <table class="table table-responsive table-striped">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Päev</th>
@@ -74,7 +63,7 @@
                     <th></th>
                     <th></th>
                 </tr>
-                
+
             </thead>
             <tbody>
                 <tr>
@@ -84,18 +73,17 @@
                     <th>Peeter Normak</th>
                     <th>
                         <a href="muudaUhteTunniplaani.html">
-                            <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/pencil.svg"> 
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/pencil.svg">
                         </a>
                     </th>
                     <th>
                         <a href="#">
-                                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/x.svg">                                
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/x.svg">
                         </a>
                     </th>
                 </tr>
             </tbody>
         </table>
-
         <h2>Lisa tund</h2>
         <div class='form-group'>
             <label for='daySelection'>Päev</label>
@@ -120,11 +108,16 @@
             <br>
             <label for='teacher'>Õppejõud</label>
             <input type='text' class='form-control' name='teacher'>
-            
-            <br><br><button class="btn btn-primary">Salvesta</button>
-        </div>
 
+            <br>
+            <br>
+            <button class="btn btn-primary">Salvesta</button>
+        </div>
+        <hr>
     </div>
+    <footer class="container">
+        <p>&copy; TLU-KT</p>
+    </footer>
 </body>
 
 </html>

@@ -1,6 +1,0 @@
-Kodused t66d
-<iframe src="https://calendar.google.com/calendar/embed?src=tlu.ee_70jtvhtcjo1jginekcce27lk0c%40group.calendar.google.com&ctz=Europe/Tallinn" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-Arvestused eksamid
-<iframe src="https://calendar.google.com/calendar/embed?src=tlu.ee_6fql2gmjrlacp79fnkjusqer7g%40group.calendar.google.com&ctz=Europe/Tallinn" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-Tunniplaan
-<iframe src="https://calendar.google.com/calendar/embed?src=tlu.ee_26fr88mp5ruglfujnde2kv9e88%40group.calendar.google.com&ctz=Europe/Tallinn" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
